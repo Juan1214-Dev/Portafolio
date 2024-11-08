@@ -1,0 +1,28 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Egresado SENA",
+    company: "Tecnólogico De Antioquia - Ingeniería",
+    description:
+"Soy Tecnólogo en Análisis y Desarrollo de Software (SENA 2024) y actualmente continúo mis estudios en Ingeniería en el Tecnológico de Antioquia, con enfoque en el desarrollo de aplicaciones web eficientes."  },
+  {
+    date: "Abril 2024 - Octubre 2024",
+    title: "Desarrollador-Practicante, Capacitación en Pruebas de Software",
+    company: "Choucair Testing  ",
+    description: "Recibí capacitación en metodologías de testing y diseño de casos de prueba para garantizar la calidad del software. Colaboré en el desarrollo e integración de componentes, revisión de código y mejora de procesos. Además, construí un backend para organizar y gestionar información utilizando una base de datos."  
+  },
+  
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
